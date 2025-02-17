@@ -1,0 +1,51 @@
+# Bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+
+# Logs and databases
+*.log
+*.sqlite3
+instance/
+
+# Ignore environment variables
+.env
+*.env
+config.py
+
+# Cache files
+*.cache
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.iml
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+htmlcov/
+*.cover
+*.pycoverage
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.mo
+*.pot
+
+# Deployment
+*.pid

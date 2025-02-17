@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Video & Image Processor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Media Processor</h1>
+        <div class="upload-box">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" id="fileInput" name="file" accept="image/*, video/*">
+                <label for="fileInput" class="drop-area">
+                    <span class="drag-text">Drag & Drop or Click to Upload</span>
+                </label>
+                <button type="submit">Process</button>
+            </form>
+        </div>
+
+        <div id="resultsContainer">
+            <!-- Image Result -->
+            <div class="result-box image-result" id="imageResult">
+                <img id="resultImage" src="" alt="Processed Image">
+                <div class="caption-box">
+                    <h3>Generated Caption:</h3>
+                    <p id="imageCaption"></p>
+                </div>
+            </div>
+
+            <!-- Video Result -->
+            <div class="result-box video-result" id="videoResult">
+                <h2>Video Summary</h2>
+                <div class="keyframes-grid" id="keyframesGrid"></div>
+            </div>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Processing...</p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
